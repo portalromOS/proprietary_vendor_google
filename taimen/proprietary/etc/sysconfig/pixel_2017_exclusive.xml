@@ -4,4 +4,9 @@
 <config>
     <!-- This defines the Photos preload feature for specifically the 2017 Pixel devices. -->
     <feature name="com.google.android.apps.photos.PIXEL_2017_PRELOAD" />
+    
+  <component-override package="com.google.android.documentsui" >
+    <component class="com.android.documentsui.LauncherActivity" enabled="false" />
+  </component-override>
+  
 </config>
